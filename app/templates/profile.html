@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block css %}
+<style type="text/css">
+    body{background-image: url({{ url_for('static', filename='/images/bg2.png')}});  background-size: cover;}
+    #cc{color: rgba(245, 241, 241, 0.87);}
+    hr{border-color:white;}
+</style>
+{% endblock %}
+
+
+
+{% block main %}
+<div id='ccc'>
+<div id="profileframe">
+    <div id="tophalf">
+        <div id="imge">
+            <img src={{ url_for('static', filename='/images/mary.jpg')  }} alt="Profile picture of user" id="profilepic">
+        </div>
+        <div id="topwords">
+            <div id="name">
+                Mary Jane
+            </div>
+            <div id="username">
+                <span>@mjane</span>
+            </div>
+            <div id="location">
+                Kingston, Jamaica
+            </div>
+            <div id="joined">
+                <span>{{djoin}}</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="bottomhalf">
+        <div id="bio">
+        Hi There... Hardwork and Consistency equals to success. 
+        I can do all things through christ who strengthens me. Also I love food.
+        Lots and lots of food.
+        </div> 
+
+        <div id="followdetails">
+            <div id="stats">
+                <div id="stat1">7</div>  <div id="stat2">100</div>  <div id="stat3">250</div>
+            </div>
+            <div id="labels">
+                <div id="label1">Post</div>  <div id="label2">Following</div>  <div id="label3">Followers</div>
+            </div>
+        </div>
+
+        <div id="button">
+            <input type="button" value="Follow" id="fllw">
+        </div>
+    </div>
+    
+   
+
+</div>
+</div>
+
+{% endblock %}
